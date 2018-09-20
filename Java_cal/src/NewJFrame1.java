@@ -8,6 +8,7 @@
  *
  * @author Kavishka
  */
+// Creating GUI for calculator application
 public class NewJFrame1 extends javax.swing.JFrame {
 
     /**
