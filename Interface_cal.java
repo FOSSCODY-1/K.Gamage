@@ -66,8 +66,7 @@ public class Interface_cal extends javax.swing.JFrame {
         btnLog = new javax.swing.JButton();
         btnDel = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
-        btnOff = new javax.swing.JButton();
-        btnOn = new javax.swing.JButton();
+        lbl = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
 
         jButton1.setText("jButton1");
@@ -323,7 +322,7 @@ public class Interface_cal extends javax.swing.JFrame {
             }
         });
 
-        btnDel.setBackground(new java.awt.Color(0, 51, 153));
+        btnDel.setBackground(new java.awt.Color(0, 51, 255));
         btnDel.setFont(new java.awt.Font("Sitka Small", 0, 12)); // NOI18N
         btnDel.setText("backspace");
         btnDel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -333,7 +332,7 @@ public class Interface_cal extends javax.swing.JFrame {
             }
         });
 
-        btnClear.setBackground(new java.awt.Color(0, 51, 153));
+        btnClear.setBackground(new java.awt.Color(0, 51, 255));
         btnClear.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
         btnClear.setText("clear");
         btnClear.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -342,16 +341,6 @@ public class Interface_cal extends javax.swing.JFrame {
                 btnClearActionPerformed(evt);
             }
         });
-
-        btnOff.setBackground(new java.awt.Color(0, 51, 153));
-        btnOff.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
-        btnOff.setText("off");
-        btnOff.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        btnOn.setBackground(new java.awt.Color(0, 51, 153));
-        btnOn.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
-        btnOn.setText("on");
-        btnOn.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -361,38 +350,29 @@ public class Interface_cal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(txtBox, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(41, 41, 41)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(41, 41, 41)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnDot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(41, 41, 41)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btn9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnEqal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(btnOn, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnOff, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnDot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(41, 41, 41)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnEqal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(81, 81, 81)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnDel, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
@@ -412,35 +392,42 @@ public class Interface_cal extends javax.swing.JFrame {
                                     .addComponent(btnMul, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnLog, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(btnTan, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnPow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addContainerGap(72, Short.MAX_VALUE))
+                                    .addComponent(btnPow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addComponent(txtBox, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(98, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(131, 131, 131))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
+                .addComponent(lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtBox, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDel)
-                    .addComponent(btnClear)
-                    .addComponent(btnOff)
-                    .addComponent(btnOn))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnMinus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnPlus, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                    .addComponent(btnMul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn4, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
-                    .addComponent(btn5, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
-                    .addComponent(btn6, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
-                    .addComponent(btnDiv, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnMod, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(btn3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPlus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnMinus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnMul, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnMod, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(btnDiv, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnPow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -485,14 +472,30 @@ public class Interface_cal extends javax.swing.JFrame {
     private void btnCosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCosActionPerformed
         num1 = Double.parseDouble(txtBox.getText());
         txtBox.setText("");
-        opr ="cos";
+         result=Math.cos(num1);
+         if(Double.toString(result).endsWith(".0"))
+              txtBox.setText(Double.toString(result).replace(".0"," "));
+         else
+                txtBox.setText(Double.toString(result));
+        
     }//GEN-LAST:event_btnCosActionPerformed
 
     private void btnInverseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInverseActionPerformed
         
         num1 = Double.parseDouble(txtBox.getText());
         txtBox.setText("");
-        opr ="1/x";
+        if(num1!=0){
+                    result = 1/num1 ;
+                    if(Double.toString(result).endsWith(".0"))
+                        txtBox.setText(Double.toString(result).replace(".0"," "));
+                    else
+                        txtBox.setText(Double.toString(result));
+                }
+        else{
+                    txtBox.setText(" ");
+                    txtBox.setText("Zero Division Error");
+        }
+        
     }//GEN-LAST:event_btnInverseActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -588,27 +591,46 @@ public class Interface_cal extends javax.swing.JFrame {
         
         num1 = Double.parseDouble(txtBox.getText());
         txtBox.setText("");
-        opr ="SQRT";
+         result = Math.sqrt(num1);
+         if(Double.toString(result).endsWith(".0"))
+               txtBox.setText(Double.toString(result).replace(".0"," "));
+         else
+                txtBox.setText(Double.toString(result));
     }//GEN-LAST:event_btnRootActionPerformed
 
     private void btnLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogActionPerformed
         
         num1 = Double.parseDouble(txtBox.getText());
         txtBox.setText("");
-        opr ="log";
+        result = Math.log10(num1);
+        if(Double.toString(result).endsWith(".0"))
+            txtBox.setText(Double.toString(result).replace(".0"," "));
+        else
+              txtBox.setText(Double.toString(result));
+        
     }//GEN-LAST:event_btnLogActionPerformed
 
     private void btnSinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSinActionPerformed
         num1 = Double.parseDouble(txtBox.getText());
         txtBox.setText("");
-        opr ="sin";
+        result=Math.sin(num1);
+        if(Double.toString(result).endsWith(".0"))
+              txtBox.setText(Double.toString(result).replace(".0"," "));
+        else
+                txtBox.setText(Double.toString(result));
+        
     }//GEN-LAST:event_btnSinActionPerformed
 
     private void btnTanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTanActionPerformed
         
         num1 = Double.parseDouble(txtBox.getText());
         txtBox.setText("");
-        opr ="tan";
+         result = Math.tan(num1);
+         if(Double.toString(result).endsWith(".0"))
+                txtBox.setText(Double.toString(result).replace(".0"," "));
+        else
+                txtBox.setText(Double.toString(result));
+        
     }//GEN-LAST:event_btnTanActionPerformed
 
     private void btnEqalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqalActionPerformed
@@ -621,6 +643,8 @@ public class Interface_cal extends javax.swing.JFrame {
                
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
+                else
+                    txtBox.setText(Double.toString(result));
                 
                 break;
               
@@ -629,64 +653,74 @@ public class Interface_cal extends javax.swing.JFrame {
                 
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
+                else
+                    txtBox.setText(Double.toString(result));
                 break;
                 
             case "x":
                 result =num1*num2;
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
+                else
+                    txtBox.setText(Double.toString(result));
                 break;
             case "%":
                 result =num1%num2;
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
+                else
+                    txtBox.setText(Double.toString(result));
                 break;
                 
             case "^":
                 result =Math.pow(num1, num2);
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
+                else
+                    txtBox.setText(Double.toString(result));
                 break;
             case "/":
                 if(num2!=0){
                     result = num1/num2;
                     if(Double.toString(result).endsWith(".0"))
                         txtBox.setText(Double.toString(result).replace(".0"," "));
+                    else
+                        txtBox.setText(Double.toString(result));
                 }
                 else{
-                   txtBox.setText(" ");
-                    txtBox.setText("Zero Division Error");
+                     txtBox.setText(" ");
+                     txtBox.setText("Zero Division Error");
                 }
                 break;
                 
-            case "SQRT":
+           /* case "SQRT":
                 result = Math.sqrt(num1);
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
-                break;
-            case "sin":
+                break;*/
+           /* case "sin":
                 result=Math.sin(num1);
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
-                break;
+                break;*/
               
-            case "cos":
+          /*  case "cos":
                 result=Math.cos(num1);
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
-                break;
+                break;*/
                 
-            case "tan":
+          /*  case "tan":
                 result = Math.tan(num1);
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
-                break;
-            case "log":
+                break;*/
+            /*case "log":
                 result = Math.log10(num1);
                 if(Double.toString(result).endsWith(".0"))
                     txtBox.setText(Double.toString(result).replace(".0"," "));
-                break;
-            case "1/x":
+                break;*/
+           /* case "1/x":
                  if(num1!=0){
                     result = 1/num1 ;
                     if(Double.toString(result).endsWith(".0"))
@@ -696,7 +730,7 @@ public class Interface_cal extends javax.swing.JFrame {
                    txtBox.setText(" ");
                     txtBox.setText("Zero Division Error");
                 }
-                break;
+                break;*/
             default:
                 txtBox.setText("Somethig is Wrong !");
                            
@@ -761,7 +795,7 @@ public class Interface_cal extends javax.swing.JFrame {
             public void run() {
                 //new Interface_cal().setVisible(true);
                 Interface_cal cal =new Interface_cal();
-                cal.setTitle("SCIENTIFIC CAL");              //Making title to scientific cal
+                cal.setTitle("MyCal");              //Making title to scientific cal
                 cal.setVisible(true);
                 
             }
@@ -790,8 +824,6 @@ public class Interface_cal extends javax.swing.JFrame {
     private javax.swing.JButton btnMinus;
     private javax.swing.JButton btnMod;
     private javax.swing.JButton btnMul;
-    private javax.swing.JButton btnOff;
-    private javax.swing.JButton btnOn;
     private javax.swing.JButton btnPlus;
     private javax.swing.JButton btnPow;
     private javax.swing.JButton btnRoot;
@@ -803,6 +835,7 @@ public class Interface_cal extends javax.swing.JFrame {
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JLabel lbl;
     private javax.swing.JTextField txtBox;
     // End of variables declaration//GEN-END:variables
 }
