@@ -1,4 +1,4 @@
 # K.Gamage
 
-## Scientific Calculator
+## MyCal
  
