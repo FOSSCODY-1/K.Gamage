@@ -26,6 +26,16 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
     </Container>
+    <Component class="java.awt.Button" name="button5">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="button5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton6"/>
+      </Properties>
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
     </Menu>
   </NonVisualComponents>
@@ -53,23 +63,38 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="lbl" min="-2" pref="196" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btn4" min="-2" pref="47" max="-2" attributes="0"/>
-                              <Component id="btn1" max="32767" attributes="0"/>
-                              <Component id="btn7" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="btn4" min="-2" pref="47" max="-2" attributes="0"/>
+                                      <Component id="btn1" max="32767" attributes="0"/>
+                                      <Component id="btn7" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="btn0" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="btn2" min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Component id="btn5" min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Component id="btn8" max="32767" attributes="0"/>
+                                  <Component id="btnchg" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="btn0" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="btn2" min="-2" pref="46" max="-2" attributes="0"/>
-                          <Component id="btn5" min="-2" pref="46" max="-2" attributes="0"/>
-                          <Component id="btn8" max="32767" attributes="0"/>
-                          <Component id="btnDot" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="btnOn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnOff" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -79,34 +104,44 @@
                           <Component id="btnEqal" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="btnClear" min="-2" pref="84" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="btnDel" min="-2" pref="89" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="btnSin" max="32767" attributes="0"/>
                                   <Component id="btnInverse" alignment="0" max="32767" attributes="0"/>
                                   <Component id="btnDiv" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="btnPlus" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <Component id="btnDot" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="btnRoot" max="32767" attributes="0"/>
                                   <Component id="btnMod" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="btnMinus" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
                                   <Component id="btnCos" max="32767" attributes="0"/>
+                                  <Component id="btnPlus" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="btnClear" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="41" pref="41" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="btnMinus" min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="btnLog" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="btnTan" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Component id="btnPow" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="btnMul" min="-2" pref="46" max="-2" attributes="0"/>
-                                  <Component id="btnLog" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="btnTan" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
-                                  <Component id="btnPow" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnMul" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnSinh" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Component id="btnCosh" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Component id="btnTanh" max="32767" attributes="0"/>
                               </Group>
                           </Group>
+                          <Component id="btnDel" alignment="1" min="-2" pref="133" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -114,12 +149,7 @@
                       <Component id="txtBox" min="-2" pref="478" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="98" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="lbl" min="-2" pref="196" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -128,52 +158,68 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Component id="lbl" min="-2" pref="26" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="txtBox" min="-2" pref="43" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnClear" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                  <Component id="btnDel" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="btn2" alignment="1" pref="46" max="32767" attributes="0"/>
-                  <Component id="btn3" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btnPlus" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btnMinus" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btnMul" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btn1" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="btnMod" alignment="1" pref="46" max="32767" attributes="0"/>
-                  <Component id="btnDiv" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btn4" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btn5" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btn6" alignment="1" max="32767" attributes="0"/>
-                  <Component id="btnPow" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnInverse" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="btnRoot" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtBox" min="-2" pref="43" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnClear" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="btnDel" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btn2" alignment="1" pref="46" max="32767" attributes="0"/>
+                          <Component id="btn3" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btnDot" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btn1" max="32767" attributes="0"/>
+                          <Component id="btnMinus" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btnMul" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btnPlus" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" pref="12" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnSinh" max="32767" attributes="0"/>
+                          <Component id="btnMod" alignment="1" pref="46" max="32767" attributes="0"/>
+                          <Component id="btnDiv" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btn4" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btn5" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btn6" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btnPow" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnCosh" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnInverse" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="btnRoot" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="btn8" max="32767" attributes="0"/>
+                          <Component id="btn7" max="32767" attributes="0"/>
+                          <Component id="btnLog" max="32767" attributes="0"/>
+                          <Component id="btn9" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnTanh" max="32767" attributes="0"/>
+                          <Component id="btnTan" max="32767" attributes="0"/>
+                          <Component id="btn0" alignment="0" pref="44" max="32767" attributes="0"/>
+                          <Component id="btnchg" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnSin" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnCos" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnEqal" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="btn8" max="32767" attributes="0"/>
-                  <Component id="btn7" max="32767" attributes="0"/>
-                  <Component id="btnLog" max="32767" attributes="0"/>
-                  <Component id="btn9" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnOn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnOff" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="btnTan" max="32767" attributes="0"/>
-                  <Component id="btn0" alignment="0" pref="44" max="32767" attributes="0"/>
-                  <Component id="btnDot" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btnSin" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btnCos" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btnEqal" alignment="0" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -193,7 +239,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -212,7 +258,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="2"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -231,7 +277,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="4"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -250,7 +296,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="5"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -269,7 +315,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="3"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -288,7 +334,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="6"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -307,7 +353,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="9"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -326,7 +372,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="8"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -345,7 +391,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="7"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -364,7 +410,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="0"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -377,15 +423,15 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn0ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnDot">
+    <Component class="javax.swing.JButton" name="btnchg">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="."/>
+        <Property name="text" type="java.lang.String" value="+/-"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
             <BevelBorder/>
@@ -393,7 +439,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDotActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnchgActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnEqal">
@@ -402,7 +448,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="="/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -415,15 +461,15 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEqalActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnPlus">
+    <Component class="javax.swing.JButton" name="btnDot">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="+"/>
+        <Property name="text" type="java.lang.String" value="."/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
             <BevelBorder/>
@@ -431,7 +477,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPlusActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDotActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnMinus">
@@ -440,7 +486,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="-"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -459,7 +505,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="/"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -478,7 +524,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="1/x"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -497,7 +543,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="sin"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -516,7 +562,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="cos"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -535,7 +581,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="%"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -554,7 +600,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="SQRT"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -573,7 +619,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="x"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -592,7 +638,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="^"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -611,7 +657,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="tan"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -630,7 +676,7 @@
           <Color blue="ff" green="99" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
+          <Font name="Arial Black" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="log"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -682,6 +728,87 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnPlus">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="99" red="66" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial Black" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="+"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPlusActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSinh">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="99" red="66" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial Black" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="sinh"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSinhActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnCosh">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="99" red="66" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial Black" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="cosh"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCoshActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnTanh">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="99" red="66" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial Black" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="tanh"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTanhActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnOn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="On"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnOff">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="off"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
