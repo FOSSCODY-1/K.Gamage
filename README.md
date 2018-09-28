@@ -14,8 +14,7 @@ Source contains the project source code as exported from Netbeans.
 
 ## How to Run MyCal
 
-<br />
-
+  First you need to install java version "1.8.0_181" in your computer to run this application. <br />
   You have to download MyCal.jar file and you can simply type <b>' java -jar/your calculator_directory/MyCal.jar ' </b>in your terminal.
 
 <br />
