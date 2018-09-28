@@ -14,9 +14,8 @@ Source contains the project source code as exported from Netbeans.
 
 ## How to Run MyCal
 
-<br />
-
-  You have to download MyCal.jar file and you can simply type <b>' java -jar/your calculator_directory/Mycal.jar ' </b>in your terminal.
+  First you need to install java version "1.8.0_181" in your computer to run this application. <br />
+  You have to download MyCal.jar file and you can simply type <b>' java -jar/your calculator_directory/MyCal.jar ' </b>in your terminal.
 
 <br />
 
@@ -29,7 +28,7 @@ Source contains the project source code as exported from Netbeans.
 ##  Contribution
  You are welcome to contribute to this project.All You have to do is send a pull request.
 <br />
-Andalso you can report issues using GitHub.
+Andalso you are welcome to report issues using GitHub.
 
 ##  Contact
 contributor -<b> Kavishka Gamage</b> 
@@ -37,3 +36,4 @@ contributor -<b> Kavishka Gamage</b>
             - kavigamage23@gmail.com
 
 ## License
+This project is licensed under the terms of MIT license.
